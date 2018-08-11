@@ -1,9 +1,8 @@
 function main(){
     var score = 0;
-    // if(document.getElementById("1.1").value === '统一建模语言'){
-    //     score = score + 5;
-    // }
-    if($("#1.1"))
+    if(document.getElementById("1.1").value === '统一建模语言'){
+        score = score + 5;
+    }
 
     if(document.getElementById("1.2.1").value === '封装性'){
         score = score + 5;
@@ -46,6 +45,9 @@ function main(){
     }
 
     document.getElementById("score").innerHTML = score;
+    $(document).ready(function(){
+        $("#showScore").text(score)
+    })
 
     return score;
 
